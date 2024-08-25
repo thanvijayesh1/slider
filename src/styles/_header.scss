@@ -1,0 +1,183 @@
+// $primary-color: #3498db;
+@import "_variables";
+@import "_mixins";
+
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 0.1px solid #c9d6e4;
+  @include respond-to("sm") {
+    width: 160px;
+    height: 151px;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  @include respond-to("md") {
+    width: 208px;
+    height: 198px;
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  @include respond-to("lg") {
+    flex: 1 0 0;
+    height: 199px;
+    font-size: 20px;
+    padding: 14px;
+  }
+
+  @include respond-to("xl") {
+    flex: 1 0 0;
+    height: 228px;
+  }
+
+  &__image {
+    width: 100%;
+    @include respond-to("sm") {
+      height: 115px;
+      width: 160px;
+    }
+    @include respond-to("md") {
+      width: 208px;
+      height: 150px;
+    }
+    @include respond-to("lg") {
+      height: 151px;
+      width: 209px;
+    }
+    @include respond-to("xl") {
+      height: 180px;
+      width: 248px;
+    }
+  }
+  &__details {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    padding: 0.375rem;
+  }
+
+  &__icon {
+    color: #3b82f6;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  &__name {
+    font-size: 13px;
+    color: $sec-color;
+  }
+}
+
+
+
+.carousel {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-normal;
+    border-bottom: 2px solid $link-color-gold;
+    padding-bottom: $spacing-xs;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+    margin-left: 16px;
+    @include respond-to("xs") {
+        display: none;
+      }
+    @include respond-to("sm") {
+      display: none;
+    }
+    @include respond-to("md") {
+      display: none;
+    }
+  }
+  &__pagination {
+    @include respond-to("xs") {
+        display: none;
+      }
+    @include respond-to("sm") {
+      display: none;
+    }
+    @include respond-to("md") {
+      display: none;
+    }
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: $font-size-lg;
+    color: $link-color;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+  &__link {
+  
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s;
+    cursor: pointer;
+
+   
+  }
+
+  &__linkIcon {
+    margin-left: $spacing-sm;
+    color: $link-color-gold;
+    font-size: $font-size-lg;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $sec-color !important;
+}
+
+.swiper-wrapper{
+    @include respond-to("sm") {
+        margin-right: 8px;
+        margin-left: 8px;
+      }
+      @include respond-to("md") {
+        margin-right: 12px;
+        margin-left: 12px;
+      }
+      @include respond-to("lg") {
+        margin-right: 12px;
+        margin-left: 12px;
+      }
+      @include respond-to("xl") {
+        margin-right: 12px;
+        margin-left: 12px;
+      }
+}
+

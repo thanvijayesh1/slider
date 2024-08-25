@@ -18,6 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  height: 100vh;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -30,4 +31,22 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+.swiper-button-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.swiper-pagination-bullet {
+  width: 35px !important;
+  height: 5px !important;
+  background: #000;
+  border-radius: 0% !important;
+  opacity: 0.7;
+}
+.swiper-pagination {
+  position: unset !important;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
 }
