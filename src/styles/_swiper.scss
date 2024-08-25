@@ -2,11 +2,6 @@
 @import "_variables";
 @import "_mixins";
 
-$spacing-xs: 4px;
-$spacing-sm: 8px;
-$spacing-md: 16px;
-$spacing-lg: 24px;
-$spacing-xl: 32px;
 .card {
   display: flex;
   flex-direction: column;
@@ -135,9 +130,7 @@ $spacing-xl: 32px;
     color: $link-color;
     transition: color 0.3s;
 
-    &:hover {
-      color: $accent-color;
-    }
+  
   }
   &__link {
   

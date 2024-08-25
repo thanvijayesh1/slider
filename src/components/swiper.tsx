@@ -9,7 +9,7 @@ import { FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6";
 import Image from "next/image";
 import Link from "next/link";
 import useIsMobile from "@/customHooks";
-import "../styles/_header.scss";
+import "../styles/_swiper.scss";
 interface MySwiperProps {
   title: string;
   linkText: string;
