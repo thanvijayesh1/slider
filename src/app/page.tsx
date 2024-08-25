@@ -1,8 +1,8 @@
-import MySwiper from "@/components/swiper";
+import Swiper from "@/components/swiper";
 export default function Home() {
   return (
     <main className="p-2">
-      <MySwiper title="CASINO" linkText="SEE ALL GAMES" linkHref="/games" />
+      <Swiper title="CASINO" linkText="SEE ALL GAMES" linkHref="/games" />
     </main>
   );
 }
